@@ -5,3 +5,11 @@
     height: 50px;
     text-align: center;
 }
+
+th{
+    width: 120px;
+}
+
+.firstColumn{
+    width: 150px;
+}
