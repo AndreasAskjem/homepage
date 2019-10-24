@@ -1,22 +1,15 @@
 #gridWrap{
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    grid-template-areas: 'left middle right';
+    grid-template-areas: '. middle .';
 }
-
-#left{
-    grid-area: left;
-}
-#middle{
+#content{
     grid-area: middle;
 }
-#right{
-    grid-area: right;
-}
 
 
 
-#things, #things th, #things tr, #things td{
+table, th, tr, td{
     border: 1px solid black;
     border-collapse: collapse;
     padding: 7px;
