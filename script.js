@@ -70,7 +70,7 @@ function createTable(){
     </tr>
     `;
     miscellaneous.forEach(createRow);
-    document.getElementById('miscellaneous').innerHTML = tableHTML
+    document.getElementById('miscellaneous').innerHTML = tableHTML;
 }
 
 function createRow(element){
