@@ -17,7 +17,7 @@ let games = [
     {
         name: 'Snake',
         link: 'https://andreasaskjem.github.io/Oppgaver/mySnake/main.html',
-        description: 'Eat the apples. Press Enter to restart.'
+        description: 'Eat the apples. Use the arrow keys. Press Enter to restart.'
     }
 ];
 
