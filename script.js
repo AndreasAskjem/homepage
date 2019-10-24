@@ -56,7 +56,7 @@ createTable();
 function createTable(){
     tableHTML = `
     <tr>
-        <th class="firstColumn">Things I've made</th>
+        <th class="firstColumn">Games</th>
         <th class="description">Description</th>
     </tr>`;
     games.forEach(createRow);
