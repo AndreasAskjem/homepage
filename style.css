@@ -1,3 +1,21 @@
+#gridWrap{
+    display: grid;
+    grid-template-columns: auto 400px auto;
+    grid-template-areas: 'left middle right';
+}
+
+#left{
+    grid-area: left;
+}
+#middle{
+    grid-area: middle;
+}
+#right{
+    grid-area: right;
+}
+
+
+
 #things, #things th, #things tr, #things td{
     border: 1px solid black;
     border-collapse: collapse;
@@ -17,21 +35,4 @@ th{
 
 .description{
     width: 230px;
-}
-
-
-#gridWrap{
-    display: grid;
-    grid-template-columns: auto 400px auto;
-    grid-template-areas: 'left middle right';
-}
-
-#left{
-    grid-area: left;
-}
-#middle{
-    grid-area: middle;
-}
-#right{
-    grid-area: right;
 }
