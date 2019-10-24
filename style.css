@@ -1,15 +1,37 @@
-#mainContent, #mainContent th, #mainContent tr, #mainContent td{
+#things, #things th, #things tr, #things td{
     border: 1px solid black;
     border-collapse: collapse;
-    padding: 10px;
+    padding: 7px;
     height: 50px;
     text-align: center;
 }
 
 th{
     width: 120px;
+    font-size: 18px;
 }
 
 .firstColumn{
     width: 150px;
+}
+
+.description{
+    width: 230px;
+}
+
+
+#gridWrap{
+    display: grid;
+    grid-template-columns: auto 400px auto;
+    grid-template-areas: 'left middle right';
+}
+
+#left{
+    grid-area: left;
+}
+#middle{
+    grid-area: middle;
+}
+#right{
+    grid-area: right;
 }
