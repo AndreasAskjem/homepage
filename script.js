@@ -18,7 +18,7 @@ let games = [
         name: 'Minesweeper Online',
         link: 'https://andreasaskjem.github.io/Oppgaver/MinesweeperOnline/',
         description: 'Same as above, but with online leaderboard.'
-    }
+    },
     {
         name: 'Snake',
         link: 'https://andreasaskjem.github.io/Oppgaver/mySnake/main.html',
