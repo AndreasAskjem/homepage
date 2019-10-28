@@ -12,7 +12,7 @@ let games = [
     {
         name: 'Minesweeper',
         link: 'https://andreasaskjem.github.io/Oppgaver/Minesweeper2/main.html',
-        description: 'Click the flag on top to place flags. 3 difficulties.'
+        description: 'Click the flag on top (or hold Ctrl while clicking) to place flags. 3 difficulties.'
     },
     {
         name: 'Snake',
