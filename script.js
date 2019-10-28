@@ -15,6 +15,11 @@ let games = [
         description: 'Click the flag on top (or hold Ctrl while clicking) to place flags. 3 difficulties.'
     },
     {
+        name: 'Minesweeper Online',
+        link: 'https://andreasaskjem.github.io/Oppgaver/MinesweeperOnline/',
+        description: 'Same as above, but with online leaderboard.'
+    }
+    {
         name: 'Snake',
         link: 'https://andreasaskjem.github.io/Oppgaver/mySnake/main.html',
         description: 'Eat the apples. Use the arrow keys. Press Enter to restart.'
