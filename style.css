@@ -1,12 +1,21 @@
 #gridWrap{
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    grid-template-areas: '. middle .';
+    grid-auto-rows: auto 20px;
+    grid-template-areas: '. middle .'
+                         'footer footer footer';
 }
 #content{
     grid-area: middle;
 }
 
+#footer{
+    grid-area: footer;
+    padding: 20px;
+    text-align: center;
+    vertical-align: bottom;
+    
+}
 
 
 table, th, tr, td{
