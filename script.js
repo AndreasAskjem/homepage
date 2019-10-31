@@ -51,6 +51,11 @@ let miscellaneous = [
         name: 'Todo list',
         link: 'https://andreasaskjem.github.io/Oppgaver/todoList/',
         description: 'Add, remove and edit tasks on a todo list.'
+    },
+    {
+        name: 'Random Squares',
+        link: 'https://andreasaskjem.github.io/Oppgaver/randomSquares/',
+        description: 'Uses JS classes to generate random squares. Click the squares to remove them.'
     }
 ];
 
