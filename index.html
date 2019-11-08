@@ -18,7 +18,7 @@
                 <th class="description">{{ games.header[1] }}</th>
             </tr>
             <tr v-for="row in games.content">
-                <td class="firstColumn"> <a href="{{row.link}}"> {{row.name}} </a> </td>
+                <td class="firstColumn"> <a v-bind:href="row.link"> {{row.name}} </a> </td>
                 <td class="description">{{row.description}}</td>
             </tr>
         </table><br/>
@@ -28,7 +28,7 @@
                 <th class="description">{{ other.header[1] }}</th>
             </tr>
             <tr v-for="row in other.content">
-                <td class="firstColumn"> <a href="{{row.link}}"> {{row.name}} </a> </td>
+                <td class="firstColumn"> <a v-bind:href="row.link" > {{row.name}} </a> </td>
                 <td class="description">{{row.description}}</td>
             </tr>
         </table>
