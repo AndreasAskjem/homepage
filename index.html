@@ -6,13 +6,32 @@
     <title>Homepage</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
 <div id="gridWrap">
     <div id="content">
-        <table id="games"></table><br/>
-        <table id="miscellaneous"></table>
+        <table id="games">
+            <tr>
+                <th class="firstColumn">{{ games.header[0] }}</th>
+                <th class="description">{{ games.header[1] }}</th>
+            </tr>
+            <tr v-for="row in games.content">
+                <td class="firstColumn"> <a href="{{row.link}}"> {{row.name}} </a> </td>
+                <td class="description">{{row.description}}</td>
+            </tr>
+        </table><br/>
+        <table id="miscellaneous">
+            <tr>
+                <th class="firstColumn">{{ other.header[0] }}</th>
+                <th class="description">{{ other.header[1] }}</th>
+            </tr>
+            <tr v-for="row in other.content">
+                <td class="firstColumn"> <a href="{{row.link}}"> {{row.name}} </a> </td>
+                <td class="description">{{row.description}}</td>
+            </tr>
+        </table>
     </div>
 
     <div id="footer">
@@ -22,6 +41,16 @@
 </div>
 
 <script src="script.js"></script>
+
+<script>
+let gridWrap = new Vue({
+    el: "#gridWrap",
+    data: {
+        games: games,
+        other: miscellaneous
+    }
+})
+</script>
 
 </body>
 </html>
