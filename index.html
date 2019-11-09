@@ -12,26 +12,15 @@
 <body>
 <div id="gridWrap">
     <div id="content">
-        <table id="games">
-            <tr>
-                <th class="firstColumn">{{ games.header[0] }}</th>
-                <th class="description">{{ games.header[1] }}</th>
-            </tr>
-            <tr v-for="row in games.content">
-                <td class="firstColumn"> <a v-bind:href="row.link"> {{row.name}} </a> </td>
-                <td class="description">{{row.description}}</td>
-            </tr>
-        </table><br/>
-        <table id="miscellaneous">
-            <tr>
-                <th class="firstColumn">{{ other.header[0] }}</th>
-                <th class="description">{{ other.header[1] }}</th>
-            </tr>
-            <tr v-for="row in other.content">
-                <td class="firstColumn"> <a v-bind:href="row.link" > {{row.name}} </a> </td>
-                <td class="description">{{row.description}}</td>
-            </tr>
-        </table>
+
+        <custom-table
+            v-bind:data="games"
+        ></custom-table><br>
+
+        <custom-table
+            v-bind:data="other"
+        ></custom-table>
+
     </div>
 
     <div id="footer">
@@ -43,6 +32,22 @@
 <script src="script.js"></script>
 
 <script>
+
+Vue.component('custom-table', {
+    props: ['data'],
+    template: `
+        <table>
+            <tr>
+                <th class="firstColumn"> {{ data.header[0] }} </th>
+                <th class="description"> {{ data.header[1] }} </th>
+            </tr>
+            <tr v-for="row in data.content">
+                <td class="firstColumn"> <a :href="row.link"> {{ row.name }} </a> </td>
+                <td class="description"> {{ row.description }} </td>
+            </tr>
+        </table>`
+})
+
 let gridWrap = new Vue({
     el: "#gridWrap",
     data: {
