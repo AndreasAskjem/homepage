@@ -25,6 +25,11 @@ let games = {
             name: 'Snake',
             link: 'https://andreasaskjem.github.io/Oppgaver/mySnake/main.html',
             description: 'Eat the apples. Use the arrow keys. Press Enter to restart.'
+        },
+        {
+            name: '2 Player Snake',
+            link: 'https://andreasaskjem.github.io/GeneralModul2/snakeTwoPlayer/',
+            description: "Blue player: arrow keys. Green player: ASWD. There's still a lot of bugs." 
         }
     ]
 };
