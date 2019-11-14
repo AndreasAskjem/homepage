@@ -29,7 +29,7 @@ let games = {
         {
             name: '2 Player Snake',
             link: 'https://andreasaskjem.github.io/GeneralModul2/snakeTwoPlayer/',
-            description: "Blue player: arrow keys. Green player: ASWD. There's still a lot of bugs." 
+            description: "Blue player: arrow keys. Green player: ASWD. Restart with Enter. Be the last survivor to win." 
         }
     ]
 };
