@@ -29,7 +29,7 @@ let games = {
         {
             name: 'Multiplayer Snake',
             link: 'https://andreasaskjem.github.io/GeneralModul2/snakeTwoPlayer/',
-            description: `Blue: arrow keys. Green: ASWD. Yellow: LØÆP. Purple: GHJY or 4568 (numpad) Restart with Enter.`
+            description: `Blue: arrow keys. Green: ASWD. Yellow: LØÆP. Purple: GHJY or 4568 (numpad).`
         }
     ]
 };
