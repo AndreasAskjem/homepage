@@ -27,9 +27,9 @@ let games = {
             description: 'Eat the apples. Use the arrow keys. Restart with Enter.'
         },
         {
-            name: '2 Player Snake',
+            name: 'Multiplayer Snake',
             link: 'https://andreasaskjem.github.io/GeneralModul2/snakeTwoPlayer/',
-            description: "Blue player: arrow keys. Green player: ASWD. Restart with Enter. Be the last survivor to win." 
+            description: `Blue: arrow keys. Green: ASWD. Yellow: LØÆP. Purple: GHJY or 4568 (numpad) Restart with Enter.`
         }
     ]
 };
